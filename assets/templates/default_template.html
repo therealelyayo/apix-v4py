@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Email Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #6941C6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #666666;
+        }
+        .button {
+            display: inline-block;
+            background-color: #6941C6;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Hello, {{firstname}}</h1>
+        </div>
+        <div class="content">
+            <p>We hope this email finds you well.</p>
+            <p>Thank you for your interest in our products at {{company}}. We're excited to have you on board!</p>
+            <p>As discussed, I'm following up on our conversation about how our services can help your team achieve its goals.</p>
+            <p><a href="#" class="button">Learn More</a></p>
+            <p>If you have any questions, please don't hesitate to reach out.</p>
+            <p>Best regards,<br>The Team</p>
+        </div>
+        <div class="footer">
+            <p>This email was sent to {{email}} at {{time}}</p>
+            <p>© 2025 MailChats. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
