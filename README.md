@@ -22,7 +22,25 @@ Once the Codespace is ready, you can run:
 python mailchats_app.py
 ```
 
-### 🖥️ Local Development
+### 🛠️ One-Click Environment Setup (New!)
+
+Set up your entire development environment with a single command:
+
+#### On Unix-based Systems (Linux, macOS):
+```bash
+./setup_environment.sh
+```
+
+#### On Windows:
+```cmd
+setup_environment.bat
+```
+
+This will automatically check requirements, install dependencies, configure your environment, and run tests to ensure everything is working correctly. For more options and details, see [SETUP_GUIDE.md](SETUP_GUIDE.md).
+
+### 🖥️ Manual Setup
+
+If you prefer to set up manually:
 
 ```bash
 # Clone the repository
@@ -72,6 +90,7 @@ python -m pytest --cov=attached_assets --cov-report=term-missing
 - **Template Analysis**: AI-powered template validation and improvement
 - **Standalone Deployment**: No installation required for end-users
 - **GitHub Codespaces**: Seamless cloud development environment
+- **One-Click Setup**: Automated environment configuration for quick start
 
 ## 🧰 Components
 
@@ -79,6 +98,8 @@ python -m pytest --cov=attached_assets --cov-report=term-missing
 - **[send_email.py](attached_assets/send_email.py)**: Email dispatch functionality with SMTP support
 - **[mailchats_app.py](mailchats_app.py)**: Main application entry point
 - **[standalone_tool.py](standalone_tool.py)**: Build and packaging system
+- **[setup_environment.sh](setup_environment.sh)** & **[setup_environment.bat](setup_environment.bat)**: One-click environment setup scripts
+- **[SETUP_GUIDE.md](SETUP_GUIDE.md)**: Detailed environment setup documentation
 
 ## 👨‍💻 Development
 
