@@ -1,0 +1,16 @@
+# These owners will be the default owners for everything in the repo.
+# Unless a later match takes precedence, they will be requested for
+# review when someone opens a pull request.
+* @therealelyayo
+
+# Email parsing engine
+/attached_assets/enhanced_email_parser.py @therealelyayo
+
+# Email sending functionality
+/attached_assets/send_email.py @therealelyayo
+
+# Build and standalone application
+/mailchats_app.py @therealelyayo
+/standalone_tool.py @therealelyayo
+/build_standalone.py @therealelyayo
+/prepare_distribution.py @therealelyayo

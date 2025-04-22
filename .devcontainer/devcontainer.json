@@ -1,0 +1,36 @@
+{
+  "name": "APIX-V4PY Python Development",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "16"
+    },
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers-contrib/features/black:2": {},
+    "ghcr.io/devcontainers-contrib/features/flake8:2": {},
+    "ghcr.io/devcontainers-contrib/features/pytest:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "njpwerner.autodocstring",
+        "ms-vscode.live-server",
+        "esbenp.prettier-vscode",
+        "visualstudioexptteam.vscodeintellicode"
+      ],
+      "settings": {
+        "python.linting.enabled": true,
+        "python.linting.flake8Enabled": true,
+        "python.formatting.provider": "black",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": true
+        }
+      }
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "remoteUser": "vscode"
+}
